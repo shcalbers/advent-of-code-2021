@@ -49,13 +49,13 @@ inline auto BingoSubsystem::run(std::string file_name) noexcept -> void {
             if (board_it->has_bingo()) {
                 std::cout << "BINGO! The following board won:\n" << *board_it << '\n';
                 std::cout << "Total Score: " << board_it->score() << '\n';
+                
                 board_it = boards.erase(board_it);
+                if (boards.size() == 0) return;
             } else {
                 board_it++;
             }
         }
-        
-        if (boards.size() == 0) return;
     }
 
     std::cout << "Nobody won this round... :c" << std::endl;
