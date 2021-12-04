@@ -3,6 +3,7 @@
 
 #include <cassert>
 
+#include <iomanip>
 #include <ostream>
 
 #include <vector>
@@ -122,7 +123,7 @@ inline std::ostream& operator<<(std::ostream& out, const BingoBoard& board) {
     for (auto row = 0; row < board.numbers.size(); row++) {
         for (auto col = 0; col < board.numbers.size(); col++) {
             auto check_mark = board.numbers[row][col].marked ? 'x' : 'o';
-            out << board.numbers[row][col].value << check_mark << ' ';
+            out << std::setw(2) << board.numbers[row][col].value << check_mark << ' ';
         }
         out << '\n';
     }
