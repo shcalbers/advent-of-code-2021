@@ -23,7 +23,7 @@ auto main(void) noexcept -> int {
 
     for (auto day = 0; day < simulation_length; day++) {
         auto birthing_fishies = lanternfishies[in_labor];
-        for (auto generation = 1; generation < lanternfishies.size(); generation++) {
+        for (auto generation = 1; generation < total_generations; generation++) {
             lanternfishies[generation-1] = lanternfishies[generation]; 
         }
 
