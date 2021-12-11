@@ -5,7 +5,7 @@
 #include <array>
 #include <string>
 
-#include "signal.cpp"
+#include "signal.hpp"
 
 using namespace advent_of_code::day_8;
 
