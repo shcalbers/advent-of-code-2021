@@ -10,7 +10,7 @@
 
 namespace advent_of_code {
 
-inline namespace day4 {
+inline namespace day_4 {
 
 class BingoBoard final {
 
