@@ -1,1 +1,7 @@
+# Ignore build files.
 *.exe
+
+# Ignore folders with dots in their name.
+# I use folders with such names to store work in progress, tests, etc.
+# Basically stuff that I may or may not finish some time and shouldn't be committed to git (yet).
+*.*/
